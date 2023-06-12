@@ -1,0 +1,13 @@
+{
+  "name": "lc09-ecommerce-website",
+  "version": "1.0.0",
+  "description": "![ecommerce webiste](https://raw.githubusercontent.com/ziddahedem/LC09-ecommerce-website/master/images/lc09-ecommerce%20website.jpg)",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

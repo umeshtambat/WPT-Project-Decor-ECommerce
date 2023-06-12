@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Box icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- Website logo -->
+    <link
+      rel="shortcut icon"
+      href="images/website logo.jpg"
+      type="image/x-icon"
+    />
+    <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Login</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div class="navigation">
+      <div
+        class="nav-center container d-flex shadow sm bg-body-tertiary rounded"
+      >
+        <nav class="navbar d-flex">
+          <div class="container-fluid font-family: 'Vast Shadow', cursive;">
+            <a class="navbar-brand fs-1 fw-bold" href="#">
+              <img
+                src="./images/Sajlogo.jpg"
+                alt="Logo"
+                width="140"
+                height="60"
+                class="d-inline-block align-text-center ms-2"
+              />
+            </a>
+          </div>
+        </nav>
+
+        <ul class="nav-list d-flex">
+          <li class="nav-item">
+            <a href="./index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="product.html" class="nav-link">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a href="aboutus.html" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+          <li class="icons d-flex">
+            <a href="login.html" class="icon">
+              <i class="bx bx-user"></i>
+            </a>
+            <div class="icon">
+              <i class="bx bx-search"></i>
+            </div>
+            <div class="icon">
+              <i class="bx bx-heart"></i>
+              <span class="d-flex">0</span>
+            </div>
+            <a href="cart.html" class="icon">
+              <i class="bx bx-cart"></i>
+              <span class="d-flex">0</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="hamburger">
+          <i class="bx bx-menu-alt-left"></i>
+        </div>
+      </div>
+    </div>
+
+    <!-- Login -->
+    <div class="container">
+      <div class="login-form">
+        <form action="index.html">
+          <h1 >Login</h1>
+          <p style="font-size: 1.9rem;">
+            Already have an account? Login in or
+            <a href="signup.html">Sign Up</a>
+          </p>
+
+          <label id="email-label" style="font-size: 2rem;">Email</label>
+          <input
+            id="uname"
+            type="email"
+            placeholder="Enter Email" 
+            name="email"
+            spellcheck="false"
+            onclick="validatEmail()"
+            required
+          />
+
+         
+
+          <label for="psw" style="font-size: 2rem;">Password</label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+          />
+
+          <label style="font-size: 1.5rem;">
+            <input
+              type="checkbox"
+              unchecked=""
+              name="remember"
+              style="margin-bottom: 15px"
+            />
+            Remember me
+          </label>
+
+          <p style="font-size: 1.9rem;"> 
+            By creating an account you agree to our
+            <a href="#">Terms & Privacy</a>.
+          </p>
+
+          <div class="buttons">
+            <button type="reset" class="cancelbtn hero-btn btn-1">Cancel</button>
+            <button
+              onclick="validateEmail()"
+              
+              type="submit"
+              href="./index.html"
+              class="signupbtn hero-btn btn-1"
+            >
+              Login
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <br /><br />
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="row">
+        <div class="col d-flex">
+          <h4>INFORMATION</h4>
+          <a href="./aboutus.html">About us</a>
+          <a href="">Contact Us</a>
+        </div>
+        <div class="col d-flex">
+          <h4>USEFUL LINK</h4>
+          <a href="./aboutus.html">About us</a>
+              <a href="./contactus.html">Contact Us</a>
+        </div>
+        <div class="col d-flex">
+          <span><i class="bx bxl-facebook-square"></i></span>
+          <span><i class="bx bxl-instagram-alt"></i></span>
+          <span><i class="bx bxl-github"></i></span>
+          <span><i class="bx bxl-twitter"></i></span>
+          <span><i class="bx bxl-pinterest"></i></span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Custom Script -->
+    <script src="./js/index.js"></script>
+    <script src="./js/validation.js"></script>
+  </body>
+</html>
